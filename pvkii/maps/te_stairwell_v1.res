@@ -1,0 +1,17 @@
+"resources"
+{
+"maps/te_stairwell_v1.bsp" "file"
+"maps/te_stairwell_v1.res" "file"
+"maps/te_stairwell_readme.txt" "file"
+"materials/models/miggogmodels/stairway/france_trim07.vmt" "file"
+"materials/models/miggogmodels/stairway/ground05a.vmt" "file"
+"materials/models/miggogmodels/stairway/j_stonewell2.vmt" "file"
+"materials/models/miggogmodels/stairway/tilefloor001a.vmt" "file"
+"materials/models/miggogmodels/stairway/trim06.vmt" "file"
+"models/miggogmodels/stairway.dx80.vtx" "file"
+"models/miggogmodels/stairway.dx90.vtx" "file"
+"models/miggogmodels/stairway.mdl" "file"
+"models/miggogmodels/stairway.phy" "file"
+"models/miggogmodels/stairway.sw.vtx" "file"
+"models/miggogmodels/stairway.vvd" "file"
+}
