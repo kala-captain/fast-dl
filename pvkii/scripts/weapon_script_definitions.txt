@@ -1,0 +1,105 @@
+"Damage"	default 42,	self explanatory.
+"Bullets" default 1, amount of bullets fired per shot
+"Spread" default 20, the spread of which a gun will spread if it is coded to do so.
+"MaxVelocity" default 1500, how many hammer units of force are applied upon the projectile when fired.
+"Gravity" default 1.0, the scale of gravity on the projectile
+
+"SpecialDamage" default 50: the amount of damage dealt per special hit
+"SpecialDuration" default 10: the length of the special in seconds
+
+// maa special specific
+"SpecialWarmup" special warmup 1: the time the maa special must take before it is activated
+"SpecialRange" default 150, the radius at which cloud elements of the maa special will reach
+"SpecialLinger" default 1, lifetime of a maa special cloud
+"SpecialSpeedup" default 1, speed boost applied to maa during special
+"SpecialFrequency" default 1, frequency in seconds between each emission of a maa special cloud.
+
+"BulletSpeed" default 6000, velocity of bullet in hu
+"BulletDrop" default 80, how many hammer units the bullet is predicted to drop
+"HeadshotDamage" default 1.5, damage multiplier of headshot
+"DeployDelay" default .5, time a weapon takes to draw before it can fire
+"ChargeRate" default 1.0, time a weapon takes to fully charge
+"MaxChargeTime" default 2.0, time that a weapon will remain fully charged.
+
+"ChargeDecayTime" default 8.0, time a weapon takes to decay fully
+"ChargeFactor" default 1.5, speed multiplier of charge when atlatl is aimed
+"SpecialMaxVelocity" default 1500, velocity for captain special.
+"SpecialGravity" default 1.0, gravity of captain specials
+"SpecialLimit" unused
+"SpecialQuotaPercentage" default .33, percent of max special damage required to stun a target.
+"CycleTime" default 0.15, generally used for dictating firerates of certain alt weapons.
+
+"PlayerSpeedSniper" default 120, movespeed of a player during defined sniper / charge state
+"PlayerSpeedReload"	default 120, movespeed of a player during reload
+"PlayerSpeedSpecial" no default, used only for cutlass special slowdown
+
+"ReloadTime" default 3.25, used for setting the reloading time of a weapon
+"BackstabMinDamage" default 40, minimum floored damage for a backstab
+"BackstabMaxDamage" default 70, maximum capped damage for a backstab
+"Knockback"	default 250, h/u of knockback.
+"AuxKnockback" default 250, unused
+"falloff" default 1, whether damage falls off for bullets or not.
+"MaxFalloffDistance" default 750, distance at which a bullet deals minimal falloff damage
+"MinFalloffDistance" default 250, distance at which a bullets damage begins to fall off
+"MaxFalloffDistanceAimed" default 1250, aimed variant
+"MinFalloffDistanceAimed" default 750, aimed variant
+"MinimumDamageFalloff" default 10, a bullets "plink" damage
+"FalloffCutoff" default -1, distance at which a bullet will deal "plink" damage
+"HealIncrement" unused
+"MaxHeal" unused
+"MaxAuxHeal" unused
+"HealPercentage" unused
+"BurstTime" default 2.5, time in which the recurve bow has to burst fire
+"GrenadeDamage" default 40, handmortar grenadoe damage
+"GrenadeRadius" default 200, radius of grenadoe explosion
+
+// MELEE DATA
+
+"Range" the range of a melee weapon in h/u
+"AuxiliaryRange" the secondary range of a melee weapon in h/u, very specific usages
+"ShieldRange" the range of a shield bash in h/u
+"FireRate" the length of an attack in seconds, generally best left unused
+"TotalDamage" the base damage of an attack
+
+"MaxChargeBonus" default 1.35, the damage an attack will gradually scale to at full charge.
+"MaxChargeTime" default 1.5, the time it takes to fully charge an attack
+"ChargeCycleTime" default 5, how long it will take before an attack decays
+"ViewEffectScale" default 1, how much a melee attack will move the camera.
+
+"BashDamage" default 5, damage of a bash.
+"MaxBashChargeTime" default .75, the time it takes to charge a bash
+"MaxBashChargeBonus" default 2.0, the damage multiplier of a bash
+"ShieldStrength" default 200, hp of a shield
+
+"StartAttackSpeed" default 1.0, the speed multiplier of melee windup (lower is slower)
+"AttackSpeed" default 1.0, speed multiplier of a weapons swing (lower is slower)
+"SwingSpeed" default 1.0, speed multiplier of a weapons recovery (factors into AttackSpeed (lower is slower))
+
+"MaxCombo" default 4, the maximum combo allowed for a weapon (increasing this will increase max multipliers, too! )
+
+"ChargeDist" generally used for self-knockback weapons, e. g. blunderbooster / flail
+"MaxOverchargeBonus" default 1.5, maximum damage dealt with a flail overcharge (scaling from max default charge)
+"MaxOverchargeTime"	default 2.0, time an overcharge can be held.
+"OverchargeCycletime" default 5.0, time until an overcharge is fully decayed
+"BufferPercent" default 33, percent of a damage dealt that will be returned to player as imperviousness
+"BufferMax" default 100, max imperviousness allowed for the claws
+"BufferDecayTick" default 8, imperviousness lost per second.
+
+
+"ComboTime" "small" "medium" "large" (1.5, 2.0, 2.5) combodecaytimer length (time that must expire before combo will decay)
+
+"AttackWeight" "small" "medium" "large", the weight of attack alone. (medium attack can be parried by medium, large weights; it cannot parry not small)
+"Weight"	 "small" "medium" "large", the weight of both attack and parry.
+"ParryWeight" "small" "medium" "large", the weight of parry alone. (medium parry can parry medium, small weights; it cannot parry large)
+
+// ATTACK DIR DATA 
+"TraceStart" delay before traces begin casting after an attack has been released. multiplied by AttackSpeed and SwingSpeed
+"TraceEnd" time the traces will be active, subtracting TraceStart. multiplied by AttackSpeed and SwingSpeed
+"NoCharge" whether an attack wont charge, or not. usually reserved for autoswing.
+"StartDuration" time before an attack will be released.
+"Duration" time after an attack is released before the player is actionable.
+"TraceDir" direction of the attacks traces
+"DamageMultiplier" default 1.0, damage multiplier for specific attack direction
+"Activity" animation event of weapon swing
+"StartActivity" animation event of weapon windup
+"IdleActivity" animation event of weapon charge idle (unused)
